@@ -1,0 +1,21 @@
+<div class="container">
+    <img src="../../assets/images/Logo.png" alt=".."/>
+    <h2>Sign In</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="form-field">
+        <label>SSO Id</label>
+        <input type="text" name="ssoId" formControlName="ssoId" class="form-input"/>
+        </div>
+        <div class="form-field">
+        <label>Password</label>
+        <input type="password" name="password" formControlName="password" class="form-input" />
+        </div>
+         <div class="form-field-checkbox">
+            <input type="checkbox" name="remember" value="remember"/><label>Remember me</label> 
+         </div>
+         <div class="form-field">
+            <button type="submit" [disabled]="loginForm.invalid">Submit</button>
+         </div>
+        
+    </form>
+</div>

@@ -1,0 +1,75 @@
+<div class="dashboard-container">
+    <div class="filter-container">
+        <app-filter-contracts></app-filter-contracts>
+    </div>
+    <section class="container">
+    <div class="wrapper">
+      <kendo-tabstrip (tabSelect)="onTabSelect($event)">
+        <kendo-tabstrip-tab title="ISPO" [selected]="true">
+          <ng-template kendoTabContent>
+            <div class="content">
+             
+            </div>
+          </ng-template>
+        </kendo-tabstrip-tab>
+        <kendo-tabstrip-tab title="VDR">
+          <ng-template kendoTabContent>
+            <div class="content">
+           
+            </div>
+          </ng-template>
+        </kendo-tabstrip-tab>
+        <kendo-tabstrip-tab title="VDR Revision">
+          <ng-template kendoTabContent>
+            <div class="content">
+         
+            </div>
+          </ng-template>
+        </kendo-tabstrip-tab>
+        <kendo-tabstrip-tab title="VDR Finalization">
+          <ng-template kendoTabContent>
+            <div class="content">
+             
+            </div>
+          </ng-template>
+        </kendo-tabstrip-tab>
+           <kendo-tabstrip-tab title="OTD Trends">
+          <ng-template kendoTabContent>
+            <div class="content">
+             
+            </div>
+          </ng-template>
+        </kendo-tabstrip-tab>
+           <kendo-tabstrip-tab title="Engineering Productivity">
+          <ng-template kendoTabContent>
+            <div class="content">
+             
+            </div>
+          </ng-template>
+        </kendo-tabstrip-tab>
+           <kendo-tabstrip-tab title="Technical Alignment">
+          <ng-template kendoTabContent>
+            <div class="content">
+             
+            </div>
+          </ng-template>
+        </kendo-tabstrip-tab>
+      </kendo-tabstrip>
+    </div>
+     <app-quality></app-quality>
+    <!-- <kendo-label
+      class="k-display-block"
+      [for]="switch"
+    ></kendo-label>
+    <kendo-switch #switch [(ngModel)]="tabChart" [onLabel]="'Table'" [offLabel]="'Chart View'"></kendo-switch>
+    {{tabChart}}
+    @if (tabChart === true) {
+        <app-quality></app-quality>
+}  @else {
+    <app-iep-bar-chart></app-iep-bar-chart>
+} -->
+
+</section>
+</div>
+
+

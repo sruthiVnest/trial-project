@@ -1,0 +1,50 @@
+.container{
+        background-color: #0b6346;
+        top:0;
+        display: flex;
+        padding: 2px;
+}
+.icon-left{
+align-items: flex-start;
+}
+.icon-right{
+    margin-left: auto;
+
+    align-items: flex-end;
+    color: aliceblue;
+}
+
+ kendo-appbar {
+        background: #05322B;
+        width: 100%;
+        color: white;
+      }
+      button{
+        background: transparent;
+        border: none;
+        cursor: pointer;
+      }
+      .title {
+        font-size: 18px;
+        margin: 0;
+      }
+      kendo-badge-container {
+        margin-right: 8px;
+      }
+      ul {
+        font-size: 14px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+      li {
+        margin: 0 9px;
+      }
+      li:hover {
+        cursor: pointer;
+        color: #d6002f;
+      }
+      .actions .k-button {
+        padding: 0;
+      }
