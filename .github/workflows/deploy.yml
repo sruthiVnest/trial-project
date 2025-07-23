@@ -19,7 +19,8 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: 20.9.0  # Match your Angular app Node version
- 
+    - name: Add 404 fallback
+      run: cp dist/trial-project/index.html dist/trial-project/404.html
     - name: Install dependencies
       run: npm i
  
