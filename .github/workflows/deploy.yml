@@ -20,7 +20,7 @@ jobs:
       with:
         node-version: 20.9.0  # Match your Angular app Node version
     - name: Add 404 fallback
-      run: cp dist/trial-project/index.html dist/trial-project/404.html
+      run: cp dist/trial-project/browser/index.html dist/trial-project/browser/404.html
     - name: Install dependencies
       run: npm i
  
