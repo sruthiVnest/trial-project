@@ -12,5 +12,5 @@ import { provideAnimations } from '@angular/platform-browser/animations';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'poc-iep-web';
+  title = 'trial-project';
 }
