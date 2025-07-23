@@ -26,9 +26,9 @@ jobs:
     - name: Build Angular app
       run: npm run build -- --configuration production
     - name: Add 404 fallback
-      run: cp dist/trial-project/browser/index.html dist/trial-project/browser/404.html
+      run: cp dist/browser/index.html dist/browser/404.html
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: dist/trial-project # Replace with actual output folder
+        publish_dir: dist/browser/ # Replace with actual output folder
