@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main  # Change if you use a different default branch
+permissions:
+  contents: write  # Required to push to gh-pages branch
  
 jobs:
   build:
@@ -16,10 +18,10 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: 18  # Match your Angular app Node version
+        node-version: 20.9.0  # Match your Angular app Node version
  
     - name: Install dependencies
-      run: npm ci
+      run: npm i
  
     - name: Build Angular app
       run: npm run build -- --configuration production
@@ -28,4 +30,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist/<project-name>  # Replace with actual output folder
+        publish_dir: ./dist/poc-iep-web # Replace with actual output folder
